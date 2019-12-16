@@ -12,6 +12,9 @@ body{
     width: 100vw;
     height: 100vh;
     background-color: #333;
+    background-image: url(V30Bsx9khRfe5KCvj2ivrsYTvlg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container {
@@ -31,5 +34,13 @@ body{
 }
 .btn{
    background-color: hsl(200, 100%, 50%);
-   border: 1px solid hsl(200, 100%, 50%) 
+   border: 1px solid hsl(200, 100%, 30%);
+   border-radius: 5px;
+   color: antiquewhite;
+   outline: none;
+ 
+}
+
+.btn:hover{
+    border-color: black;
 }
