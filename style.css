@@ -17,6 +17,19 @@ body{
     background-size: cover;
 }
 
+.audioPlayer {
+    width: 20px;
+    height: 10px;
+    position: relative;
+}
+
+.audioPlayer audio{
+  position: absolute;
+  top: 250px;
+  left: 280px;
+  width: 100%
+}
+
 .container {
     width: 800px;
     max-width: 80%;
