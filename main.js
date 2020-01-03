@@ -206,7 +206,7 @@ const textNodes = [
   },
   {
       id: 13, 
-      text: 'Tu t approche et un garde ainsi qu une personne qui te semble importante t interpellent',
+      text: 'Tu t approche et un garde ainsi qu une personne avec un badge ou il est écrit "NAROUTE" t interpellent',
       options: [
         {
             text: 'Les prévenir que leurs ville n est pas sûre',
@@ -246,11 +246,11 @@ const textNodes = [
   },
   {
     id: 16,
-    text: 'Tu es à konoha le village caché des feuilles, décline ton identité',
+    text: 'Tu es à konohax le village caché des feuilles, décline ton identité',
     options:[
         {
             text: 'Donner son identité',
-            nextText: 18
+            nextText: 19
         },
         {
           text: 'Refuser de donner son identité',
@@ -261,7 +261,7 @@ const textNodes = [
   },
   {
     id: 17,
-    text: 'Que s est il passé?',
+    text: 'Capturez Le',
     options:[
         {
             text: 'Tu es soupçonné d espionnage et est emprisonné ',
@@ -327,13 +327,117 @@ const textNodes = [
     
   },
   {
-    id: 21,
-    text: 'Ok comme tu préfère',
+    id: 22,
+    text: 'Oh tu semble avoir du potentiel. \n Que dirais tu d entrer dans la garde',
     options:[
-        {
-            text: 'Demander ou tu es',
-            nextText: 16
-        },
+      {
+        text: 'Accepter',
+        nextText: 23
+    },
+    {
+      text: 'Refuser',
+      nextText: 24
+    }
+         ]
+    
+  },
+  {
+    id: 23,
+    text: '*Tu passe quelques années dans la garde.\n Ton efficacité est enfin récompensée\n On te propose deux choix',
+    options:[
+      {
+        text: 'Devenir chef de la garde',
+        nextText: 25
+    },
+    {
+      text: 'Rentrer chez les services secret du village',
+      nextText: 26
+    }
+         ]
+    
+  },
+  {
+    id: 24,
+    text: 'Tu oses refuser cette opportunité tu es forcément un ennemie',
+    options:[
+      {
+        text: 'Ils t emprisonnent',
+        nextText: -1
+      }
+            ]
+    
+  },
+  {
+    id: 25,
+    text: 'Tu coule des jours paisible en défendant le village et Fonde une famille',
+    options:[
+      {
+        text: 'Félicitation tu as gagné (Recommencer ?)',
+        nextText: -1
+      }
+            ]
+    
+  },
+  {
+    id: 26,
+    text: 'On te propose une mission d espionnage',
+    options:[
+      {
+        text: 'Accepter',
+        nextText: 27
+      },
+      {
+        text: 'Refuser',
+        nextText: 25
+      }
+            ]
+    
+  },
+  {
+    id: 27,
+    text: 'Tu te fais capturer lors d une mission d espionnage\n Ils te demandent de livrer les secret du village',
+    options:[
+      {
+        text: 'Parler',
+        nextText: 28
+      },
+      {
+        text: 'Refuser de parler',
+        nextText: 29
+      }
+            ]
+    
+  },
+  {
+    id: 28,
+    text: 'Tu décide de parler\n Après avoir délivrer les secret du village ils n ont plus besoin de toi et te torturent a mort',
+    options:[
+      {
+        text: 'Fin',
+        nextText: -1
+      },
+            ]
+    
+  },
+  {
+    id: 29,
+    text: 'Ils te torturent et te laissent pour mort\n Une expédition du village arrivent et te porte secours',
+    options:[
+      {
+        text: 'Revenir au village',
+        nextText: 30
+      },
+            ]
+    
+  },
+  {
+    id: 30,
+    text: 'Tu rentre au village on te soigne et tu termine t es vieux jours en héros pour ne pas avoir vendu le village à l ennemie',
+    options:[
+      {
+        text: 'Felicitation (Recommencer?)',
+        nextText: -1
+      }
             ]
     
   },
