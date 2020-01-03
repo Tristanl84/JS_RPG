@@ -19,13 +19,13 @@ body{
 
 .audioPlayer {
     width: 20px;
-    height: 10px;
+    height: 15px;
     position: relative;
 }
 
 .audioPlayer audio{
   position: absolute;
-  top: 250px;
+  top: 240px;
   left: 280px;
   width: 100%
 }
