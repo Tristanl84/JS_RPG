@@ -100,7 +100,7 @@ const textNodes = [
     text: 'En explorant la ville tu tombe sur un groupe de malfrat vêtus de noir et de rouge, ils te confrontent et dans le feu de l action du trébuche et meurs',
     options: [
       {
-        text: 'Restart',
+        text: 'Recommencer',
         nextText: -1
       }
     ]
@@ -110,7 +110,7 @@ const textNodes = [
     text: 'Sans aucun sous en poche du décide de rentrer par effraction dans une chambre. Tu termine en prison après que le propriétaire ai appelé la garde',
     options: [
       {
-        text: 'Restart',
+        text: 'Recommencer',
         nextText: -1
       }
     ]
@@ -172,7 +172,7 @@ const textNodes = [
   },
   {
     id: 10,
-    text: 'Tu parviens rapidement à crier "KATON GOUKAKYUU no jutsu". Une boule de feu jaillit, les voyous brûlent et s enfuient',
+    text: 'Tu parviens rapidement à crier "KATON LA BOULE DE FEU SUPREME"\n. Une boule de feu jaillit, les voyous brûlent et s enfuient',
     options: [
       {
         text: 'Continuer ton périple',
@@ -225,11 +225,11 @@ const textNodes = [
     options: [
         {
             text: 'Lui demander où tu es',
-            nextText: 17
+            nextText: 16
         },
         {
             text: 'Lui dire que la ville n est pas sûre',
-            nextText: 18
+            nextText: 17
         }
     ]
   },
@@ -243,7 +243,100 @@ const textNodes = [
           }
       ]
       
-  }
+  },
+  {
+    id: 16,
+    text: 'Tu es à konoha le village caché des feuilles, décline ton identité',
+    options:[
+        {
+            text: 'Donner son identité',
+            nextText: 18
+        },
+        {
+          text: 'Refuser de donner son identité',
+          nextText: 17
+      }
+    ]
+    
+  },
+  {
+    id: 17,
+    text: 'Que s est il passé?',
+    options:[
+        {
+            text: 'Tu es soupçonné d espionnage et est emprisonné ',
+            nextText: -1
+        },
+    ]
+    
+  },
+  {
+    id: 18,
+    text: 'Que s est il passé?',
+    options:[
+        {
+            text: 'Raconter la rencontre avec les bandits',
+            nextText: 20
+        },
+        {
+          text: 'S excuser et dire que cela n a pas d importance',
+          nextText: 21
+      }
+    ]
+    
+  },
+  {
+    id: 19,
+    text: 'Tu t apelle Ritisus ?\n Pas commun comme nom\n Que fait tu ici?',
+    options:[
+        {
+            text: 'Raconter son histoire',
+            nextText: 22
+        },
+        {
+          text: 'Refuser de raconter',
+          nextText: 17
+      },
+    ]
+    
+  },
+  {
+    id: 20,
+    text: 'Un étranger qui à réussi à maitriser cette technique, impressionnant.\n Que dirait tu de rentrer dans la garde?',
+    options:[
+        {
+            text: 'Accepter',
+            nextText: 23
+        },
+        {
+          text: 'Refuser',
+          nextText: 17
+      }
+    ]
+    
+  },
+  {
+    id: 21,
+    text: 'Ok comme tu préfère',
+    options:[
+        {
+            text: 'Demander ou tu es',
+            nextText: 16
+        },
+            ]
+    
+  },
+  {
+    id: 21,
+    text: 'Ok comme tu préfère',
+    options:[
+        {
+            text: 'Demander ou tu es',
+            nextText: 16
+        },
+            ]
+    
+  },
 ]
 
 startGame()
